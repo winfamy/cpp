@@ -6,8 +6,6 @@ using namespace std;
 int main() {
 	string name;
 	int num1, num2;
-	int sum, product, mod;
-	double quotient;
 
 	cout << "Enter name: ";
 	cin >> name;
