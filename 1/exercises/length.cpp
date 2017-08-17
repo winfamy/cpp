@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
@@ -8,7 +9,7 @@ int main() {
 	cout << "Enter centimeters: ";
 	cin >> centimeters;
 
-	inches = centimeters/2.54;
+	inches = round(centimeters/2.54);
 	feet = inches/12;
 	yards = feet/3;
 
