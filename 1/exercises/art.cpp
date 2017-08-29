@@ -6,12 +6,12 @@ using namespace std;
 int main() {
 	string name;
 
-	cout << " .       . " << endl;
-	cout << " |\\_---_/| " << endl;
-	cout << "/   o_o   \\" << endl;
-	cout << "|    U    |" << endl;
-	cout << "\\  ._I_.  /" << endl;
- 	cout << " `-_____-' " << endl;
+	cout << "\t .       . \n";
+	cout << "\t |\\_---_/| \r\n";
+	cout << "\t/   o_o   \\" << endl;
+	cout << "\t|    U    |" << endl;
+	cout << "\t\\  ._I_.  /" << endl;
+ 	cout << "\t `-_____-' " << endl;
 
 	cout << "Give it a name: ";
 	cin >> name;
