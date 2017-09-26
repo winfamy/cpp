@@ -12,5 +12,7 @@ int main() {
 	ifstream fin;
 	ofstream fout;
 
+
+
 	return 0;
 }

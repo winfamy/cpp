@@ -1,0 +1,15 @@
+#46728  Savings   $1000   $2808.00
+Account received 4% interest.
+
+#87324  Checking  $1500   $8073.45
+Account received 5% interest.
+
+#79873  Savings   $1000   $790.00
+Account received a $10.00 service fee.
+
+#89832  Checking  $2000   $3090.00
+Account received 3% interest.
+
+#98322  Checking  $1000   $725.00
+Account received a $25.00 service fee.
+
