@@ -2,6 +2,7 @@
 #include <string>
 #include <cmath>
 #include <math.h>
+#include <algorithm>
 
 using namespace std;
 
@@ -14,8 +15,13 @@ void numberPalindrone();
 void stringPalindrone() {
 	string str, orig;
 	cout << "Enter string: ";
-	cin.ignore(80, '\n');
 	getline(cin, str);
+
+	str.erase(remove_if(str.begin(), str.end(), [](char c) {
+		return !isalpha(c);
+	}), str.end());
+	transform(str.begin(), str.end(), str.begin(), ::tolower);
+
 	orig = str;
 
     int n = str.length();

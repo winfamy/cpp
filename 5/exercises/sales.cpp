@@ -5,6 +5,7 @@ using namespace std;
 
 string generateAsterisks(int count) {
 	string asterisks = "";
+	count = count/100;
 	for (int i = 0; i < count; i++) {
 		asterisks += "*";
 	}
