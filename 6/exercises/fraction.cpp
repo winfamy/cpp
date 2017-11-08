@@ -27,10 +27,9 @@ int main() {
 	int num = 0, denom = 0;
 
 	cout << "---- Fraction Reducer ----" << endl;
-	while (num == 0) {
-		cout << "Numerator: ";
-		cin >> num;
-	}
+
+	cout << "Numerator: ";
+	cin >> num;
 
 	while (denom == 0) {
 		cout << "Denominator: ";
@@ -38,8 +37,12 @@ int main() {
 	}
 
 	cout << num << "/" << denom << " = ";
-	reduceF(num, denom, gcf(num, denom));
-	cout << num << "/" << denom << endl;
+	if (num == 0)
+		cout << 0 << endl;
+	else {
+		reduceF(num, denom, gcf(num, denom));
+		cout << num << "/" << denom << endl;
+	}
 
 	return 0;
 }
