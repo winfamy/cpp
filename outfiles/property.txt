@@ -1,4 +1,0 @@
-Assessed Value:               1000000.00
-Property Value:                920000.00
-Rate for $100.00:                   1.05
-Taxes:                           9660.00
