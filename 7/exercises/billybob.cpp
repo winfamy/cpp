@@ -41,6 +41,7 @@ int main() {
 	sort(word1, word2);
 	sort(word2, word3);
 	sort(word1, word3);
+	sort(word1, word2);
 
 	cout << word1 << " " << word2 << " " << word3 << endl;
 	cout << "cy@ " << name << " the great" << endl;

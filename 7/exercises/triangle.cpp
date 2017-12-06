@@ -37,7 +37,7 @@ triangleType shape(double& side1, double& side2, double& side3) {
 	else if (side1 == side2 || side2 == side3 || side3 == side1)
 		return isosceles;
 	else
-		return noTriangle;
+		return scalene;
 }
 
 void displayShape(triangleType type) {
