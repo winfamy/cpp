@@ -19,7 +19,7 @@ int main() {
 	for(int i = 0; i < 7; i++) {
 		cout << "Employee (" << empIds[i] << "): " << endl;
 		getHoursPay(i);
-		calcWages(i);
+1		calcWages(i);
 	}
 
 	cout << setprecision(2) << showpoint << fixed << endl;
