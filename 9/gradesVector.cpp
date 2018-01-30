@@ -12,7 +12,7 @@ double findAvg(const vector<double>&);
 int main()
 {
     ifstream fin;
-    fin.open("StudentData.txt");
+    fin.open("./data/grades.txt");
 
     vector<double> grades(1);
     string name;
