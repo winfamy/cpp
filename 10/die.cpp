@@ -28,7 +28,7 @@ void Die::displayTable () {
 	cout << setprecision(2) << showpoint << fixed;
 	cout << setw(10) << "Number" << setw(20) << "Probability" << setw(20) << "Occurence" << endl;
 
-	cout << setw(10) << "2" 	<< setw(20) << "1/36" << setw(20) << (double)outcomes[2]/times  << endls;
+	cout << setw(10) << "2" 	<< setw(20) << "1/36" << setw(20) << (double)outcomes[2]/times  << endl;
 	cout << setw(10) << "3" 	<< setw(20) << "2/36" << setw(20) << (double)outcomes[3]/times  << endl;
 	cout << setw(10) << "4" 	<< setw(20) << "3/36" << setw(20) << (double)outcomes[4]/times  << endl;
 	cout << setw(10) << "5" 	<< setw(20) << "4/36" << setw(20) << (double)outcomes[5]/times  << endl;
