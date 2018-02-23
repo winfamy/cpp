@@ -1,7 +1,7 @@
 #ifndef POINT_H
 #define POINT_H
 
-#include<string>
+#include <string>
 using namespace std;
 
 class date {
