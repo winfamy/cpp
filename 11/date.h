@@ -8,7 +8,6 @@ class date {
 	public:
 		date();
 		date(int, int, int);
-		void setMonthNames(string[12]);
 		int getMonth();
 		int getDay();
 		int getYear();
@@ -22,7 +21,7 @@ class date {
 		int month;
 		int day;
 		int year;
-		string monthNames[12];
+		static string monthNames[12];
 };
 
 #endif

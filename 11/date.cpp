@@ -26,13 +26,6 @@ date::date(int d, int m, int y) {
 	this->day = d;
 	this->month = m;
 	this->year = y;
-	const string monthNames[12] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-}
-
-void date::setMonthNames(string inNames[12]) {
-	for (int i = 0; i < 12; i++) {
-		this->monthNames[i] = inNames[i];
-	}
 }
 
 int date::getDay() {
@@ -64,9 +57,15 @@ void date::displayDate1() {
 }
 
 void date::displayDate2() {
-	cout << this->monthNames[month-1] << " " << this->day << ", " << this->year << endl;
+	cout << date::monthNames[month-1] << " " << this->day << ", " << this->year << endl;
 }
 
 void date::displayDate3() {
-	cout << this->day << " " << this->monthNames[month-1] << " " << this->year << endl;
+	for (int i = 0; i < 12; i++) {
+		cout << date::monthNames[i] << endl;
+	}
+
+	cout << this->day << " " << date::monthNames[month-1] << " " << this->year << endl;
 }
+
+string date::monthNames[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};

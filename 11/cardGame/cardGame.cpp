@@ -150,10 +150,14 @@ int main() {
 
 		if (playerBust && dealerBust) {
 			cout << "You tied! ";
-		} else if ((playerBust && !dealerBust) || getSum("dealer") > getSum("player")) {
+		} else if ((playerBust && !dealerBust)) {
 			cout << "You lost! :( ";	
-		} else if ((!playerBust && dealerBust) || getSum("player") > getSum("dealer")) {
+		} else if ((!playerBust && dealerBust)) {
 			cout << "You won! ";
+		} else if (getSum("player") > getSum("dealer")) {
+			cout << "You won! ";
+		} else if (getSum("dealer") > getSum("player")) {
+			cout << "You lost :( ";
 		} else {
 			cout << "You tied! ";
 		}

@@ -44,13 +44,11 @@ int main() {
 		cout << endl << endl;
 		cout << "Choose an option to continue." << endl;
 		cout << "1. Enter new date" << endl;
-		cout << "2. Exit";
+		cout << "2. Exit" << endl;
 		cout << "Choice: ";
 		cin >> choice;
-		switch (choice) {
-			if (choice == 2)
-				looping = false;
-		}
+		if (choice == 2)
+			looping = false;
 	} 
 
 	return 0;
