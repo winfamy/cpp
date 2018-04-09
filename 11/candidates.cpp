@@ -34,7 +34,7 @@ int main() {
 	cout << showpoint << setprecision(2) << fixed << setfill(' ');
 	cout << left << setw(12) << "Candidate" << setw(12) << "Votes" << setw(12) << "Vote %" << endl;
 	for (int i = 0; i < count; i++) {
-		cout << left << setw(12) << names[i] << setw(12) << votes[i] << setw(12) << (double)votes[i]/totalVotes << endl;
+		cout << left << setw(12) << names[i] << setw(12) << votes[i] << setw(12) << (double)votes[i]/totalVotes*100 << endl;
 	}
 
 	cout << left << setw(12) << "Total" << setw(12) << totalVotes << endl << endl;
