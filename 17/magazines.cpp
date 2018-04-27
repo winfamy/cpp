@@ -32,8 +32,6 @@ void add() {
 
 		if (fptr == nullptr) {
 			cptr = fptr = newMagazine;
-		} else if (fptr->next == nullptr) {
-			fptr->next = newMagazine;
 		} else {
 			cptr = fptr;
 			while (cptr->next != nullptr) {

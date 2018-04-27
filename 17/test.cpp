@@ -7,17 +7,12 @@ struct dog {
 	char name[20];
 	string breed;
 	int age;
+	dog * next;
 };
-
-void fill(dog &d, char *n, string b, int age) {
-	strcpy(d.name, n);
-	d.breed = b;
-	d.age = age;
-}
 
 int main() {
 	dog* elvis = new dog;
-	char name[20] = {'e', 'l', 'v', 'i', 's'};
-	string breed = "golden";
-	fill(*elvis, name, breed, 12);
+	dog* A = new dog;
+	dog* B = new dog;
+	*A = *B;
 }

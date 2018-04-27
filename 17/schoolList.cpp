@@ -158,9 +158,8 @@ highschool* search(string h, int &x)
 	curptr = headptr;
 	while (curptr != NULL) {
 		size_t pos = (curptr->sname).find(h);
-		cout << pos << endl;
-		cout << string::npos << endl;
 		if (pos != string::npos) {
+			x = pos;
 			return curptr;
 		} else {
 			curptr = curptr->next;
