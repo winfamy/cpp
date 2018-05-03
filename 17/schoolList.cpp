@@ -168,11 +168,8 @@ highschool* search(string h, int &x)
 		}
 	}
 
-	return NULL;		// Me - after function complete, NULL will only be returned if not found
-
-	//don't call menu here - it is taken care of in the menu!
+	return NULL;
 }
-
 
 
 void menu()
@@ -186,13 +183,11 @@ void menu()
 
 	string look4 = "";			//school name to use for search option
 
-	highschool *r = NULL;		//school pointer to use for search option
-
-	int pos = 0;				//school position on list to use for search option
+	highschool *r = NULL;
+	int pos = 0;
 
 	cin>>c;
-	cin.ignore(80,'\n'); //ignores the new line character still sitting in input stream when the integer is read...
-						//this is necessary in order to use getline properly for reading strings...
+	cin.ignore(80,'\n');
 
 	switch(c)
 	{
