@@ -61,7 +61,7 @@ void addschool(string x)
 	cout<<"School mascot? ";
 	getline(cin, newSchool->mascot);
 
-	newSchool->next = NULL;   //last one on the list always points to NULL
+	newSchool->next = nullptr;   //last one on the list always points to NULL
 
 	//move curptr to the end of the list, then point it to newSchool
 
@@ -78,7 +78,7 @@ void addschool(string x)
 	{
 		headptr = curptr = newSchool;  //add the first one!
 	}
-
+	newSchool->next = nullptr;
 }
 
 void add()
@@ -155,13 +155,15 @@ void printall()
 
 highschool* search(string h, int &x)
 {
+	int i = 0;
 	curptr = headptr;
-	while (curptr != NULL) {
+	while (curptr != nullptr) {
 		size_t pos = (curptr->sname).find(h);
 		if (pos != string::npos) {
-			x = pos;
+			x = i;
 			return curptr;
 		} else {
+			i++;
 			curptr = curptr->next;
 		}
 	}
